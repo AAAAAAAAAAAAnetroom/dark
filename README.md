@@ -1,6 +1,6 @@
 # 𝙉𝙀𝙏𝙍𝙊𝙊𝙈 𝘿𝙖𝙧𝙠 𝙫𝙚𝙧𝙨𝙞𝙤𝙣
 
-NTEROOM Dark versionはNETROOMユーザー
+NTEROOM Dark versionは[NETROOM]([https://github.com/kitao/pyxel](https://netroom.oz96.com/))ユーザー向けに開発されたツールです。
 
 # DEMO
 
