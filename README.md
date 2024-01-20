@@ -11,17 +11,11 @@ NTEROOM Dark versionは[NETROOM](https://netroom.oz96.com/)ユーザー向けに
 This animation is a "Cat playing on trampoline"!
 You can get basic skills for making physics simulations.
 
-# Features
+# 特徴
 
-Physics_Sim_Py used [pyxel](https://github.com/kitao/pyxel) only.
+専念されたデザインと使いやすさを求めた機能を実装しています。何かこの機能つけてとかあったら遠慮なく言ってください。
 
-```python
-import pyxel
-```
-[Pyxel](https://github.com/kitao/pyxel) is a retro game engine for Python.
-You can feel free to enjoy making pixel art style physics simulations.
-
-# Requirement
+# 使用に必要なもの
 
 * Python 3.6.5
 * pyxel 1.0.2
