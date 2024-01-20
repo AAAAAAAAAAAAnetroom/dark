@@ -8,8 +8,6 @@ NTEROOM Dark versionは[NETROOM](https://netroom.oz96.com/)ユーザー向けに
 
   ![](https://i.imgur.com/ozFspKu.gif)
 
-This animation is a "Cat playing on trampoline"!
-You can get basic skills for making physics simulations.
 
 # 特徴
 
