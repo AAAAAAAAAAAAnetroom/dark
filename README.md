@@ -2,9 +2,9 @@
 
 NTEROOM Dark versionは[NETROOM](https://netroom.oz96.com/)ユーザー向けに開発されたツールです。
 
-# DEMO
+# 実際の様子
 
-You can learn how to making cute physics simulations (looks retro game).
+こんな感じです。(β0.10版)
 
 ![](https://cpp-learning.com/wp-content/uploads/2019/05/pyxel-190505-161951.gif)
 
