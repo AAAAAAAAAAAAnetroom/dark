@@ -17,7 +17,7 @@ You can get basic skills for making physics simulations.
 
 # 使用に必要なもの
 
-* Python 3.6.5
+* Windows 10以降 か Mac (***このツールはスマホ用ページに対応していません。***また、Macの動作も保証していません。)
 * pyxel 1.0.2
 
 Environments under [Anaconda for Windows](https://www.anaconda.com/distribution/) is tested.
