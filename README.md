@@ -18,48 +18,21 @@ You can get basic skills for making physics simulations.
 # 使用に必要なもの
 
 * Windows 10以降 か Mac (***このツールはスマホ用ページに対応していません。*** また、Macの動作も保証していません。)
-* pyxel 1.0.2
+* 常識的に考えて一般的なjsの実行を許可されたブラウザ(雑だなオイ
+* Tempermonkeyなど、ユーザースクリプトが実行可能な拡張機能
 
-Environments under [Anaconda for Windows](https://www.anaconda.com/distribution/) is tested.
+# インストール(導入)方法
 
-```bash
-conda create -n pyxel pip python=3.6 Anaconda
-activate pyxel
-```
+試作なのでまだ公開できません、、、
 
-# Installation
+# 使用方法
 
-Install Pyxel with pip command.
+同
 
-```bash
-pip install pyxel
-```
+# 著者
 
-# Usage
+* AAAAAAAAAAAA
 
-Please create python code named "demo.py".
-And copy &amp; paste [Day4 tutorial code](https://cpp-learning.com/pyxel_physical_sim4/).
+# コメント
 
-Run "demo.py"
-
-```bash
-python demo.py
-```
-
-# Note
-
-I don't test environments under Linux and Mac.
-
-# Author
-
-* Hayabusa
-* R&D Center
-* Twitter : https://twitter.com/Cpp_Learning
-
-# License
-
-"Physics_Sim_Py" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-Enjoy making cute physics simulations!
-
-Thank you!
+完成し次第公開するのでどうぞお楽しみに。
