@@ -6,7 +6,7 @@ NTEROOM Dark versionは[NETROOM](https://netroom.oz96.com/)ユーザー向けに
 
 こんな感じです。(β0.10版)
 
-![](https://cpp-learning.com/wp-content/uploads/2019/05/pyxel-190505-161951.gif)
+![]([https://github.com/AAAAAAAAAAAAnetroom/dark/raw/main/darkgif11.gif])
 
 This animation is a "Cat playing on trampoline"!
 You can get basic skills for making physics simulations.
