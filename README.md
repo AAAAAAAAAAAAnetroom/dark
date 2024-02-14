@@ -6,7 +6,7 @@ NTEROOM Dark versionは[NETROOM](https://netroom.oz96.com/)ユーザー向けに
 
 こんな感じです。(β0.10版)
 
-  ![](https://imgur.com/a/lQvHUX5.gif)
+  ![](https://imgur.com/a/9rT279.gif)
 
 
 # 特徴
