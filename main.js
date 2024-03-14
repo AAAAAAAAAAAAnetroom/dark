@@ -50,8 +50,8 @@ var napv = "v0.0";
 //六保存電源
 var logv = false;
 //バージョン
-var dver = "β1.17";
-var updtmsg = "NETROOM Dark version アップデート情報\n※この情報は一回しか表示されまん\n・いなみ を要注意人物リストに追加しました。";
+var dver = "β1.21";
+var updtmsg = "NETROOM Dark version アップデート情報\n※この情報は一回しか表示されまん\n・	ログイン機能を追加しました。";
 
 // Cookieからdversionの値を取得する関数
 function getDVersionFromCookie() {
@@ -1820,14 +1820,17 @@ function generateRandomString2() {
 }
 
 function login2() {
+	var login = true;
 	var accname = prompt("アカウント名を入力してください。\n※ただし後でショートカット番号を使用する場合は空白でいいです。");
 	var password = prompt("パスワードを入力してください。\n※ただし後でショートカット番号を使用する場合は空白でいいです。");
 	var bid2 = prompt("使用するbidを入力してください。\n※ただしランダム生成にする場合は空白でいいです。");
-	var nom = prompt("ショートカット番号を利用する場合は入力してください。\n※使用方法\nまず以下のように記述したものをDarkversionが入っている拡張機能の構文の１番下に追加します。\nconst account_list = [\r\n {\r\n  no: '1',\r\n  name: '\u30a2\u30ab\u30a6\u30f3\u30c8\u540d1',\r\n  password:'\u30d1\u30b9\u30ef\u30fc\u30c91',\r\n },\r\n {\r\n  no: '2',\r\n  name: '\u30a2\u30ab\u30a6\u30f3\u30c8\u540d1',\r\n  password:'\u30d1\u30b9\u30ef\u30fc\u30c91',\r\n }\r\n]\nもちろん適時置き換えてください。\nこのようにすればnoの部分で登録したアカウントに、ここで数字を入れればログインできるようになります。");
+	var nom = prompt("\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u756a\u53f7\u3092\u5229\u7528\u3059\u308b\u5834\u5408\u306f\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002\r\n\u203b\u4f7f\u7528\u65b9\u6cd5\r\n\u307e\u305a\u4ee5\u4e0b\u306e\u3088\u3046\u306b\u8a18\u8ff0\u3057\u305f\u3082\u306e\u3092Darkversion\u304c\u5165\u3063\u3066\u3044\u308b\u62e1\u5f35\u6a5f\u80fd\u306e\u69cb\u6587\u306e\uff11\u756a\u4e0b\u306b\u8ffd\u52a0\u3057\u307e\u3059\u3002\r\n(function () {\r\n const account_list = [\r\n  {\r\n   no: '1',\r\n   name: '\u30a2\u30ab\u30a6\u30f3\u30c8\u540d1',\r\n   password:'\u30d1\u30b9\u30ef\u30fc\u30c91',\r\n  },\r\n  {\r\n   no: '2',\r\n   name: '\u30a2\u30ab\u30a6\u30f3\u30c8\u540d1',\r\n   password:'\u30d1\u30b9\u30ef\u30fc\u30c91',\r\n  }\r\n ]\r\n})();\r\n\r\n(\u3082\u3057\u3053\u306e\u69cb\u6587\u3092\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u306b\u30b3\u30d4\u30fc\u3057\u305f\u3044\u306e\u3067\u3042\u308c\u3070\u3053\u3053\u3067\u300ccopy\u300d\u3068\u3001\u534a\u89d2\u5c0f\u6587\u5b57\u3067\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u30ed\u30b0\u30a4\u30f3\u64cd\u4f5c\u306f\u4e2d\u6b62\u3055\u308c\u3001\u69cb\u6587\u304c\u30b3\u30d4\u30fc\u3055\u308c\u307e\u3059\u3002)\r\n\u3082\u3061\u308d\u3093\u9069\u6642\u7f6e\u304d\u63db\u3048\u3066\u304f\u3060\u3055\u3044\u3002\r\n\u3053\u306e\u3088\u3046\u306b\u3059\u308c\u3070no\u306e\u90e8\u5206\u3067\u767b\u9332\u3057\u305f\u30a2\u30ab\u30a6\u30f3\u30c8\u306b\u3001\u3053\u3053\u3067\u6570\u5b57\u3092\u5165\u308c\u308c\u3070\u30ed\u30b0\u30a4\u30f3\u3067\u304d\u308b\u3088\u3046\u306b\u306a\u308a\u307e\u3059\u3002\r\n\u306a\u304a\u3001\u8a73\u7d30\u306f\u30d8\u30eb\u30d7\u30da\u30fc\u30b8\u306b\u66f8\u304b\u308c\u3066\u3044\u307e\u3059\u306e\u3067\u3069\u3046\u305e\u3054\u89a7\u304f\u3060\u3055\u3044\u3002");
 	var random1 = 'm' + generateRandomString2();
 	var random2 = generateRandomString();
 	if (!nom == "") {
-
+		if (nom == "copy") {
+			copy("(function () {\r\n const account_list = [\r\n  {\r\n   no: '1',\r\n   name: '\u30a2\u30ab\u30a6\u30f3\u30c8\u540d1',\r\n   password:'\u30d1\u30b9\u30ef\u30fc\u30c91',\r\n  },\r\n  {\r\n   no: '2',\r\n   name: '\u30a2\u30ab\u30a6\u30f3\u30c8\u540d1',\r\n   password:'\u30d1\u30b9\u30ef\u30fc\u30c91',\r\n  }\r\n ]\r\n})();");
+		}
 
 		var accountNo = nom;
 		var account = account_list.find(account => account.no === accountNo);
@@ -1837,6 +1840,7 @@ function login2() {
 			var password = password;
 		} else {
 			alert("その番号無いですね");
+			var login = false;
 		}
 	}
 	if (bid2 == "") {
@@ -1847,10 +1851,22 @@ function login2() {
 	eval(random1 + ".passwd = '" + password + "';");
 	eval(random1 + ".bid = '" + bid2 + "';");
 	eval(random1 + ".sid = '" + bid2 + "';");
-	eval("socket.json.emit('login', " + random1 + ");");
+	if (login == true) {
+		eval("socket.json.emit('login', " + random1 + ");");
+	}
 
 	}
 
+
+	//bankill
+function leave(room_id) { }
+function disconnect_uid(remove_uid, room_id) { }
+$(function () {});
+var sound = new Audio('/sound/sound46.mp3');
+sound.volume -= 0.8;
+l("sound.volume:  " + sound.volume);
+var sound_on = get_strage('sound_on') - 0;
+sound_change(sound_on);
 
 
 
@@ -3114,4 +3130,13 @@ function wfdojfgtpbhjsacox() {
 	}
 	var jltwxgycdhpiai = 41;
 
+}
+
+function copy(text) {
+	var textarea = document.createElement("textarea");
+	textarea.value = text;
+	document.body.appendChild(textarea);
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
 }
